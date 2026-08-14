@@ -102,7 +102,7 @@ CURRENT_DIR := $(patsubst %/,%,$(dir $(MAKEFILE_PATH)))
 #
 #
 # TARGET = X64_INTEL_SKYLAKE_X
-TARGET = X64_INTEL_HASWELL
+# TARGET = X64_INTEL_HASWELL
 # TARGET = X64_INTEL_SANDY_BRIDGE
 # TARGET = X64_INTEL_CORE
 #
@@ -111,7 +111,7 @@ TARGET = X64_INTEL_HASWELL
 # TARGET = X86_AMD_JAGUAR
 # TARGET = X86_AMD_BARCELONA
 #
-# TARGET = ARMV8A_APPLE_M1
+TARGET = ARMV8A_APPLE_M1
 #
 # TARGET = ARMV8A_ARM_CORTEX_A76
 # TARGET = ARMV8A_ARM_CORTEX_A73
@@ -293,8 +293,8 @@ HASWELL_WITH_ZEN5 = 0
 
 # C Compiler
 #
-CC ?= gcc
-# CC = clang
+# CC ?= gcc
+CC = clang
 # CC = x86_64-w64-mingw32-gcc   # win64
 # CC = arm-linux-gnueabihf-gcc   # armv7
 # CC = aarch64-linux-gnu-gcc   # aarch64
